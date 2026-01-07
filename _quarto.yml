@@ -200,10 +200,10 @@ format:
       text:
         \usepackage{hyperref, mathtools, amsmath, scrlayer-scrpage, makeidx}
         \rohead{
-          \hrule
         }
         \lofoot{
-          \vspace*{10px} \hrule 
+          \vspace*{-150px}
+          \centering
           \tiny{
             \vspace*{3px} 
             \copyright \ \

@@ -1,4 +1,5 @@
 ---
+toc: false
 number-sections: false
 notebook-view:
   - notebook: refraction.qmd
@@ -42,5 +43,6 @@ $\textnormal{w}_{EM} \equiv$ Energy Density electromagnetic
 
 
 Refraction Index: 
+
 {{< embed refraction.qmd#eq-refraction >}}
 
