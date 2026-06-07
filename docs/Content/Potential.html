@@ -825,19 +825,20 @@ window.Quarto = {
 
 
 <p>Potential is “intrinsic energy of inertia”</p>
-<p>elec. Potential structure: <span class="math display">\[U_e \coloneqq \Phi =
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{r} \epsilon_0 Q =
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{r} \epsilon_0 It
+<p>elec. Potential structure: <span class="math display">\[U_e \coloneqq \Phi
+\hat{=}
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\left | r \right |} \frac{1}{\epsilon_0} Q =
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\left | r \right |} \frac{1}{\epsilon_0} It
 \]</span> magn. Potential structure: <span class="math display">\[
-U_m \coloneqq \boldsymbol{A} =
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{r} \frac{1}{\mu_0} I =
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{r} \frac{1}{\mu_0} Qv =
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{r} c^2 \epsilon_0 Qv =
+U_m \coloneqq \boldsymbol{A}
+\hat{=}
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\left | r \right |} \frac{1}{\mu_0} I =
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\left | r \right |} \frac{1}{\mu_0} Qv =
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\left | r \right |} \frac{1}{c^2} \frac{1}{\epsilon_0} vQ =
 \]</span><span class="math display">\[
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{r} \epsilon_0 c^2 Itv =
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{r} \epsilon_0 c^2 Ir =
-\frac{1}{2} \frac{1}{2\pi} \epsilon_0 c^2 I =
-U_e c^2 r
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\left | r \right |} \frac{1}{c^2} \frac{1}{\epsilon_0} Itv =
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\left | r \right |} \frac{1}{c^2} \frac{1}{\epsilon_0} Ir =
+\frac{1}{c^2} v U_e
 \]</span></p>
 <p><br>
 </p>
@@ -869,8 +870,8 @@ W_e = \frac{1}{2} CU^2
 W_m = \frac{1}{2} LI^2
 \end{split} \tag{6}\]</span></span></p>
 <p>Power: <span id="eq-power"><span class="math display">\[\begin{split} &amp;
-P = VI = (U_1 - U_2) \frac{Q}{t}
-\equiv \frac{\textnormal{Work}}{\textnormal{Time}} = \textnormal{Force}\cdot\textnormal{Velocity} = \frac{\textnormal{Energydifference}}{\textnormal{Time}}
+P = VI = (U_1 - U_2) \frac{Q}{t} =
+\frac{E_1 - E_2}{t} = \frac{W}{t} = \frac{Fr}{t} = Fv
 \end{split} \tag{7}\]</span></span></p>
 <p>Conductor (charge conductive element for energy transfer) condition: <span id="eq-conductor"><span class="math display">\[\begin{split} &amp;
 \sigma \cdot t \gg \epsilon_0
@@ -878,7 +879,8 @@ P = VI = (U_1 - U_2) \frac{Q}{t}
 <p>Slow changing current (quasi-stationary, low frequencies) condition: <span id="eq-slowcurrent"><span class="math display">\[\begin{split} &amp;
 \frac{v}{c} \ll \frac{1}{c}\frac{\mathscr{E}}{\mathscr{B}} \ll \frac{c}{v}
 \end{split} \tag{9}\]</span></span></p>
-<p>Energy conservation for (large extended) conductive medium: <span id="eq-energyconserv-1"><span class="math display">\[\begin{split} &amp;   
+<p>Energy conservation for (large extended) conductive medium if no forces act on it: <span id="eq-energyconserv-1"><span class="math display">\[\begin{split} &amp;   
+F =
 \int    \left(
 \frac{\partial}{\partial t} \left( we + w_m \right) + \mathbf{\nabla} \cdot \mathbf{\mathscr{S}} + \boldsymbol{j} \cdot \mathscr{E}
 \right) \, dr
