@@ -1,9 +1,242 @@
 [
   {
-    "objectID": "Content/EMfield.html",
-    "href": "Content/EMfield.html",
+    "objectID": "Content/Potential.html",
+    "href": "Content/Potential.html",
     "title": "PHYSECON",
     "section": "",
-    "text": "Electro-Magnetic Field (force caused by potential):\n\\[\\begin{split} &\n\\mathscr{B} = \\nabla \\times \\boldsymbol{U_m} =\n\\frac{1}{c} \\left( \\frac{r}{\\left| r \\right|} \\times \\mathscr{E} \\right)\n\\newline &\n\\stackrel{\\textnormal{Near Field}}{\\approx}\n...\n\\newline &\n\\stackrel{\\textnormal{Far Field}}{\\approx}\n...\n\\end{split} \\tag{1}\\]\n\\[\\begin{split} &\n\\mathscr{E}\n\\stackrel{\\textnormal{conservativ}}{=}\n-\\nabla U_e\n\\stackrel{\\textnormal{dynamic}}{=}\n-\\nabla U_e - \\frac{\\partial}{\\partial t} \\boldsymbol{U_m}\n\\newline &\n\\stackrel{\\textnormal{slow moving charge}}{=}\n\\newline &\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\epsilon_0} \\frac{1}{r} \\frac{1}{\\left( 1 - \\frac{r}{\\left| r \\right|} \\cdot \\frac{v}{c} \\right)^3 } q\n\\left[\n\\underbrace{\n\\left( 1 - \\frac{v^2}{c^2} \\right) \\frac{\\frac{r}{\\left| r \\right|} - \\frac{v}{c}}{r}\n}_\\text{uniform movement}\n+\n\\underbrace{\n    \\frac{\\frac{r}{\\left| r \\right|} \\times \\left[ \\left( \\frac{r}{\\left| r \\right|} - \\frac{v}{c} \\right) \\times \\dot{v} \\right]\n}{c^2}\n}_\\text{accelerated movement}\n\\right]\n\\newline &\n\\stackrel{\\textnormal{fast moving charge}}{=}\n...\n\\newline &\n\\stackrel{\\textnormal{Near Field}}{\\approx}\n...\n\\newline &\n\\stackrel{\\textnormal{Far Field}}{\\approx}\n...\n\\end{split} \\tag{2}\\]"
+    "text": "Electro-Magnetic Field (force caused by potential):\n\\[\\begin{split} &\n\\mathscr{B} = \\nabla \\times \\boldsymbol{U_m} =\n\\frac{1}{c} \\left( \\frac{r}{\\left| r \\right|} \\times \\mathscr{E} \\right)\n\\newline &\n\\stackrel{\\textnormal{Near Field}}{\\approx}\n...\n\\newline &\n\\stackrel{\\textnormal{Far Field}}{\\approx}\n...\n\\end{split} \\tag{1}\\]\n\\[\\begin{split} &\n\\mathscr{E}\n\\stackrel{\\textnormal{conservativ}}{=}\n-\\nabla U_e\n\\stackrel{\\textnormal{dynamic}}{=}\n-\\nabla U_e - \\frac{\\partial}{\\partial t} \\boldsymbol{U_m}\n\\newline &\n\\stackrel{\\textnormal{slow moving charge}}{=}\n\\newline &\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\epsilon_0} \\frac{1}{r} \\frac{1}{\\left( 1 - \\frac{r}{\\left| r \\right|} \\cdot \\frac{v}{c} \\right)^3 } q\n\\left[\n\\underbrace{\n\\left( 1 - \\frac{v^2}{c^2} \\right) \\frac{\\frac{r}{\\left| r \\right|} - \\frac{v}{c}}{r}\n}_\\text{uniform movement}\n+\n\\underbrace{\n    \\frac{\\frac{r}{\\left| r \\right|} \\times \\left[ \\left( \\frac{r}{\\left| r \\right|} - \\frac{v}{c} \\right) \\times \\dot{v} \\right]\n}{c^2}\n}_\\text{accelerated movement}\n\\right]\n\\newline &\n\\stackrel{\\textnormal{fast moving charge}}{=}\n...\n\\newline &\n\\stackrel{\\textnormal{Near Field}}{\\approx}\n...\n\\newline &\n\\stackrel{\\textnormal{Far Field}}{\\approx}\n...\n\\end{split} \\tag{2}\\]\nElectro-Magnetic slow movement interactions (Maxwell conditions):\n\\[\\begin{split} &\n\\nabla \\cdot \\epsilon_0 \\mathscr{E} = \\varrho \\qquad\n\\nabla \\cdot \\mathscr{B} = 0\n\\newline &\n\\nabla \\times \\mathscr{E} = -\\frac{\\partial}{\\partial t} \\mathscr{B} \\qquad\n\\nabla \\times \\frac{1}{\\mu_0} \\mathscr{B} = j + \\epsilon_0 \\frac{\\partial}{\\partial t} \\mathscr{E}\n\\end{split} \\tag{3}\\]\n\\(\\Rightarrow\\) Wave equation for potential: \\[\\begin{split} &\n\\Delta \\cdot U - \\frac{1}{c^2} \\frac{\\partial^2}{\\partial t^2} U = J\n\\end{split} \\tag{4}\\]\n\\(\\Rightarrow\\) Potential caused by “ignition J” (inhomgenity) from source at rest, v = 0: \\[\\begin{split} &\nU = -\\frac{1}{4\\pi} \\int \\frac{J}{\\left | r  \\right |} \\, dr'\n\\end{split} \\tag{5}\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#potential-as-intrinsic-energy-of-inertia",
+    "href": "Content/Potential.html#potential-as-intrinsic-energy-of-inertia",
+    "title": "PHYSECON",
+    "section": "",
+    "text": "Electro-Magnetic Field (force caused by potential):\n\\[\\begin{split} &\n\\mathscr{B} = \\nabla \\times \\boldsymbol{U_m} =\n\\frac{1}{c} \\left( \\frac{r}{\\left| r \\right|} \\times \\mathscr{E} \\right)\n\\newline &\n\\stackrel{\\textnormal{Near Field}}{\\approx}\n...\n\\newline &\n\\stackrel{\\textnormal{Far Field}}{\\approx}\n...\n\\end{split} \\tag{1}\\]\n\\[\\begin{split} &\n\\mathscr{E}\n\\stackrel{\\textnormal{conservativ}}{=}\n-\\nabla U_e\n\\stackrel{\\textnormal{dynamic}}{=}\n-\\nabla U_e - \\frac{\\partial}{\\partial t} \\boldsymbol{U_m}\n\\newline &\n\\stackrel{\\textnormal{slow moving charge}}{=}\n\\newline &\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\epsilon_0} \\frac{1}{r} \\frac{1}{\\left( 1 - \\frac{r}{\\left| r \\right|} \\cdot \\frac{v}{c} \\right)^3 } q\n\\left[\n\\underbrace{\n\\left( 1 - \\frac{v^2}{c^2} \\right) \\frac{\\frac{r}{\\left| r \\right|} - \\frac{v}{c}}{r}\n}_\\text{uniform movement}\n+\n\\underbrace{\n    \\frac{\\frac{r}{\\left| r \\right|} \\times \\left[ \\left( \\frac{r}{\\left| r \\right|} - \\frac{v}{c} \\right) \\times \\dot{v} \\right]\n}{c^2}\n}_\\text{accelerated movement}\n\\right]\n\\newline &\n\\stackrel{\\textnormal{fast moving charge}}{=}\n...\n\\newline &\n\\stackrel{\\textnormal{Near Field}}{\\approx}\n...\n\\newline &\n\\stackrel{\\textnormal{Far Field}}{\\approx}\n...\n\\end{split} \\tag{2}\\]\nElectro-Magnetic slow movement interactions (Maxwell conditions):\n\\[\\begin{split} &\n\\nabla \\cdot \\epsilon_0 \\mathscr{E} = \\varrho \\qquad\n\\nabla \\cdot \\mathscr{B} = 0\n\\newline &\n\\nabla \\times \\mathscr{E} = -\\frac{\\partial}{\\partial t} \\mathscr{B} \\qquad\n\\nabla \\times \\frac{1}{\\mu_0} \\mathscr{B} = j + \\epsilon_0 \\frac{\\partial}{\\partial t} \\mathscr{E}\n\\end{split} \\tag{3}\\]\n\\(\\Rightarrow\\) Wave equation for potential: \\[\\begin{split} &\n\\Delta \\cdot U - \\frac{1}{c^2} \\frac{\\partial^2}{\\partial t^2} U = J\n\\end{split} \\tag{4}\\]\n\\(\\Rightarrow\\) Potential caused by “ignition J” (inhomgenity) from source at rest, v = 0: \\[\\begin{split} &\nU = -\\frac{1}{4\\pi} \\int \\frac{J}{\\left | r  \\right |} \\, dr'\n\\end{split} \\tag{5}\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#elec.-potential-structure",
+    "href": "Content/Potential.html#elec.-potential-structure",
+    "title": "PHYSECON",
+    "section": "2 elec. Potential structure:",
+    "text": "2 elec. Potential structure:\n\\(J = -\\frac{1}{\\epsilon_0} \\varrho\\) \\[\\begin{split} &\nU_e \\coloneqq \\Phi\n\\newline &\n\\stackrel{\\textnormal{elec. charge dens.=}\\varrho}{=}\n\\frac{1}{4\\pi} \\frac{1}{\\epsilon_0} \\int \\frac{\\varrho}{\\left | r  \\right |} \\, dr'\n\\newline &\n\\&gt; \\hat{=} \\&gt;\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left | r \\right |} \\frac{1}{\\epsilon_0} Q =\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left | r \\right |} \\frac{1}{\\epsilon_0} It\n\\end{split} \\tag{6}\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#magn.-potential-structure",
+    "href": "Content/Potential.html#magn.-potential-structure",
+    "title": "PHYSECON",
+    "section": "3 magn. Potential structure:",
+    "text": "3 magn. Potential structure:\n\\(J = -\\mu_0 j\\) \\[\\begin{split} &\nU_m \\coloneqq \\boldsymbol{A}\n\\newline &\n\\stackrel{\\textnormal{elec. current dens.=}j}{=}\n\\frac{\\mu_0}{4\\pi} \\int \\frac{j}{\\left | r  \\right |} \\, dr'\n\\newline &\n\\&gt; \\hat{=} \\&gt;\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left | r \\right |} \\mu_0 I =\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left | r \\right |} \\frac{1}{c^2 \\epsilon_0} I =\n\\frac{1}{c^2} \\frac{1}{t} U_e\n\\newline &\n\\stackrel{\\textnormal{source in uniformal movement,} v = const. \\neq 0}{=}\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left( \\left | r \\right | - r\\cdot\\frac{v}{c} \\right)} \\mu_0 Qv\n\\newline &\n=\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left( \\left | r \\right | - r\\cdot\\frac{v}{c} \\right)} \\frac{1}{c^2 \\epsilon_0} vQ\n\\newline &\n=\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left( \\left | r \\right | - r\\cdot\\frac{v}{c} \\right)} \\frac{1}{c^2 \\epsilon_0} Itv =\n\\frac{1}{2} \\frac{1}{2\\pi} \\frac{1}{\\left( \\left | r \\right | - r\\cdot\\frac{v}{c} \\right)} \\frac{1}{c^2 \\epsilon_0} Ir\n\\end{split} \\tag{7}\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#electric-endogen-energy-e_pot-mc2",
+    "href": "Content/Potential.html#electric-endogen-energy-e_pot-mc2",
+    "title": "PHYSECON",
+    "section": "4 Electric endogen energy \\(E_{pot} = mc^2\\):",
+    "text": "4 Electric endogen energy \\(E_{pot} = mc^2\\):\n\\[\\begin{split} &\ne = \\textnormal{electron charge} \\qquad\nq = ne = \\textnormal{charge} \\qquad\nn \\in \\mathbb{N}\n\\end{split} \\tag{8}\\]\n\\[\\begin{split} &\n\\textnormal{Potential} \\qquad\nU =\n\\frac{E_{pot}}{q} =\n\\frac{\\left( mc^2 \\right)^2}{ne} =\n\\frac{m}{q} m c^4 =\n\\kappa m c^4\n\\end{split} \\tag{9}\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#electric-induced-energy-exogenous-excitation-e_kin-frac12mv2-hat-left-pc-right2",
+    "href": "Content/Potential.html#electric-induced-energy-exogenous-excitation-e_kin-frac12mv2-hat-left-pc-right2",
+    "title": "PHYSECON",
+    "section": "5 Electric induced energy (exogenous excitation) \\(E_{kin} = \\frac{1}{2}mv^2 \\> \\hat{=} \\> \\left( pc \\right)^2\\):",
+    "text": "5 Electric induced energy (exogenous excitation) \\(E_{kin} = \\frac{1}{2}mv^2 \\&gt; \\hat{=} \\&gt; \\left( pc \\right)^2\\):\n\\(E_{kin}\\) Energy density electric: \\[\\begin{split} &\nw_e = \\frac{1}{2} \\epsilon_0 \\mathscr{E}^2\n\\end{split} \\tag{10}\\]\n\\(E_{kin}\\) Energy density magnetic: \\[\\begin{split} &\nw_m = \\frac{1}{2} \\frac{1}{\\mu_0} \\mathscr{B}^2\n\\end{split} \\tag{11}\\]\n\\(E_{kin}\\) Electric Energy: \\[\\begin{split} &\nW_e = \\frac{1}{2} CU^2\n\\end{split} \\tag{12}\\]\n\\(E_{kin}\\) Magnetic Energy: \\[\\begin{split} &\nW_m = \\frac{1}{2} LI^2\n\\end{split} \\tag{13}\\]\nPower: \\[\\begin{split} &\nP = VI = (U_1 - U_2) \\frac{Q}{t} =\n\\frac{E_1 - E_2}{t} = \\frac{W}{t} = \\frac{Fr}{t} = Fv\n\\end{split} \\tag{14}\\]\n\n5.1 Conductor (charge conductive element for energy transfer) condition:\n\\[\\begin{split} &\n\\sigma \\cdot t \\gg \\epsilon_0\n\\end{split} \\tag{15}\\]\n\n\n5.2 Slow changing current (quasi-stationary, low frequencies) condition:\n\\[\\begin{split} &\n\\frac{v}{c} \\ll \\frac{1}{c}\\frac{\\mathscr{E}}{\\mathscr{B}} \\ll \\frac{c}{v}\n\\end{split} \\tag{16}\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#energy-conservation-for-large-extended-conductive-medium",
+    "href": "Content/Potential.html#energy-conservation-for-large-extended-conductive-medium",
+    "title": "PHYSECON",
+    "section": "6 Energy conservation for (large extended) conductive medium:",
+    "text": "6 Energy conservation for (large extended) conductive medium:\n\\[\\begin{split} &   \n\\int    \\left(\n\\frac{\\partial}{\\partial t} \\left( we + w_m \\right) + \\mathbf{\\nabla} \\cdot \\mathbf{\\mathscr{S}} + \\boldsymbol{j} \\cdot \\mathscr{E}\n\\right) \\, dr\n= \\frac{d}{dt}W_e + \\frac{d}{dt}W_m + D_S + \\int \\left( \\boldsymbol{j} \\cdot \\mathscr{E} \\right) \\, dr\n\\newline &\n\\stackrel{\\textnormal{low frequency}}{=}\n\\frac{1}{2}\\frac{d}{dt} \\left( LI^2 \\right) + \\frac{1}{2}\\frac{d}{dt} \\left( \\frac{Q^2}{C} \\right) + \\left( RI^2 - VI \\right) = 0\n\\end{split} \\tag{17}\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#energy-of-thin-conductor-concentrated-conductive-medium-without-electric-charge-in-its-surrounding-voltage-potentialdifference-tension",
+    "href": "Content/Potential.html#energy-of-thin-conductor-concentrated-conductive-medium-without-electric-charge-in-its-surrounding-voltage-potentialdifference-tension",
+    "title": "PHYSECON",
+    "section": "7 Energy of thin conductor (concentrated conductive medium without electric charge in its surrounding), Voltage (potentialdifference, tension):",
+    "text": "7 Energy of thin conductor (concentrated conductive medium without electric charge in its surrounding), Voltage (potentialdifference, tension):\n\\[\\begin{split} &\nV =\nU_1 - U_2 =\nr \\mathscr{E} =\n\\dot{\\Psi} + R I + \\frac{I}{C}t =\nL \\dot{I} + R I + \\frac{Q}{C}\n\\end{split} \\tag{18}\\]\n\\[\n\\Delta \\cdot \\coloneqq \\textnormal{ div grad = Laplacian}\n\\]\\[  \nJ = \\textnormal{\"ignition of inhomogenity,cause\"} \\quad\nj = \\textnormal{Current density} \\quad\n\\varrho = \\textnormal{Charge density}\n\\]\\[  \nV = \\textnormal{Potentialdifference} \\quad  \nI = \\textnormal{Current} \\quad\nR = \\textnormal{Resistance} \\quad\n\\]\\[  \nL = \\textnormal{Inductance} \\qquad  \nC = \\textnormal{Capacitance} \\qquad\nQ = c\\textnormal{harge (ion)} \\qquad\n\\Psi = LI = \\textnormal{mag. Flux}\n\\]\\[\n\\mathscr{S} = \\mathscr{E} \\times \\mathscr{H} = \\textnormal{Poynting-Vector = radiation intensity}\n\\]\\[\nD_S = \\int \\left( \\mathbf{\\nabla} \\cdot \\mathbf{\\mathscr{S}} \\right) \\, dr = \\int \\textnormal{div}(\\mathscr{E} \\times \\mathscr{H}) \\, dr = \\textnormal{dissipation engergy lost from radiation} \\approx \\textnormal{0 for low frequencies } \\omega\n\\]\\[\nd = \\sqrt{\\frac{1}{\\mu \\sigma} \\frac{2}{\\omega}} = \\textnormal{skin depth (surface) of conductor} \\qquad\nr = \\frac{d}{\\sqrt{2i}}\\rho = \\frac{d}{1+i}\\rho = \\textnormal{radius (extension) of conductor}\n\\]\\[\n\\rho = kr = \\textnormal{\"radius of curvature $k$\"}\n\\]\\[\n\\omega = \\dot{\\rho} = \\frac{v}{r} = 2 \\pi \\nu = k \\lambda \\frac{1}{T}  = \\sqrt{\\frac{k}{m}}\n\\&gt; \\hat{=} \\&gt;\nkc\n\\&gt; \\hat{=} \\&gt;\n\\frac{1}{\\sqrt{LC}}\n\\&gt; \\hat{=} \\&gt;\n\\sqrt{\\frac{g}{r}}\n= \\textnormal{frequency}\n\\]\\[\n\\mu = \\textnormal{permeability of conductor}    \\qquad\n\\sigma = \\textnormal{conductivity of conductor (dielectricum)} \\qquad\n\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#low-frequency",
+    "href": "Content/Potential.html#low-frequency",
+    "title": "PHYSECON",
+    "section": "8 Low Frequency:",
+    "text": "8 Low Frequency:\n\\[\\begin{split} & \\omega \\ll \\frac{1}{\\mu \\sigma} \\frac{2}{r^2} \\iff r \\ll d \\iff \\rho \\ll 1 \\end{split} \\tag{19}\\] \\[\nL \\approx const.    \\qquad\nC \\approx const.    \\qquad\nD_S \\approx 0\n\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#high-frequency",
+    "href": "Content/Potential.html#high-frequency",
+    "title": "PHYSECON",
+    "section": "9 High Frequency:",
+    "text": "9 High Frequency:\n\\[\\begin{split} & \\omega \\gg \\frac{1}{\\mu \\sigma} \\frac{2}{r^2} \\iff r \\gg d \\iff \\rho \\gg 1 \\end{split} \\tag{20}\\] \\[\nL(t) \\neq const.    \\qquad\nC(t) \\neq const.   \\qquad\n\\textnormal{for Dipol: } D_S \\propto \\omega^4 \\gg 0\n\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#continuity-at-rest-electic-charge",
+    "href": "Content/Potential.html#continuity-at-rest-electic-charge",
+    "title": "PHYSECON",
+    "section": "10 Continuity at Rest: Electic Charge",
+    "text": "10 Continuity at Rest: Electic Charge\nno Dissipation, no velocity, charge (ion) causes Electric Field",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#continuity-at-movement-magnetic-field",
+    "href": "Content/Potential.html#continuity-at-movement-magnetic-field",
+    "title": "PHYSECON",
+    "section": "11 Continuity at Movement: Magnetic Field",
+    "text": "11 Continuity at Movement: Magnetic Field\nno Dissipation, Velocity constant, moved charge (ion) causes emergence of Magnetic Field",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#continuity-at-acceleration-radiation-engergy",
+    "href": "Content/Potential.html#continuity-at-acceleration-radiation-engergy",
+    "title": "PHYSECON",
+    "section": "12 Continuity at Acceleration: Radiation Engergy",
+    "text": "12 Continuity at Acceleration: Radiation Engergy\nno Dissipation, Velocity changing, acceleration of charge (ion) causes emgergence of Radiation",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#continuity-in-vacuum",
+    "href": "Content/Potential.html#continuity-in-vacuum",
+    "title": "PHYSECON",
+    "section": "13 Continuity in Vacuum",
+    "text": "13 Continuity in Vacuum",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#continuity-in-matter",
+    "href": "Content/Potential.html#continuity-in-matter",
+    "title": "PHYSECON",
+    "section": "14 Continuity in Matter",
+    "text": "14 Continuity in Matter\nRefraction index emerges",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#near-field",
+    "href": "Content/Potential.html#near-field",
+    "title": "PHYSECON",
+    "section": "15 Near Field",
+    "text": "15 Near Field\n\\[\nr \\ll \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\]\n\\[\n\\frac{w_m}{w_e} \\sim \\frac{ \\frac{\\vec{p}^2}{\\epsilon_0 r^6} }{ \\frac{k^2 \\mu_0 c^2 \\vec{p}^2}{r^4} } \\sim \\left( kr \\right)^2 \\ll 1\n\\]\n\\[\n\\vec{p} = \\textnormal{elec. Dipol}\n\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#far-field",
+    "href": "Content/Potential.html#far-field",
+    "title": "PHYSECON",
+    "section": "16 Far Field",
+    "text": "16 Far Field\naccelerated movement -&gt; Radiation in Far Field of charge source\n\\[\nr \\gg \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\]\n\\[\n\\frac{w_m}{w_e} =\n\\frac{ \\frac{\\epsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 }{ \\frac{\\epsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 } = 1\n\\]",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#dissipation-in-vacuum",
+    "href": "Content/Potential.html#dissipation-in-vacuum",
+    "title": "PHYSECON",
+    "section": "17 Dissipation in Vacuum",
+    "text": "17 Dissipation in Vacuum\nno Contiunuity of chrge/matter, no Refraction index, Reflection",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#dissipation-in-matter",
+    "href": "Content/Potential.html#dissipation-in-matter",
+    "title": "PHYSECON",
+    "section": "18 Dissipation in Matter",
+    "text": "18 Dissipation in Matter\nno Contiunuity of chrge/matter with Dielectricum, Refraction merges, Reflection, Absorbtion",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
+  },
+  {
+    "objectID": "Content/Potential.html#energy-gain-by-excitation",
+    "href": "Content/Potential.html#energy-gain-by-excitation",
+    "title": "PHYSECON",
+    "section": "19 Energy gain by excitation:",
+    "text": "19 Energy gain by excitation:\nAction Quantum, Planck Constant (Energy-Frequency-Slope): \n\\[\\begin{split} &\nh =\n\\tan(\\alpha) =\n\\frac{E_{kin}}{\\nu_i - \\nu_0} =\n\\frac{eV_{0i}}{\\nu_i - \\nu_0}\n\\equiv \\\\&\n\\frac{E_1 - E_2}{\\nu_0} =\n\\frac{W}{\\nu_0} =\n\\frac{F_{EM} \\cdot x}{\\nu_0} =\n\\hbar k \\lambda\n\\end{split} \\tag{21}\\]\n\\[\\begin{split} &\n\\hbar =\n\\frac{E_1 - E_2}{\\omega} =\n\\end{split} \\tag{22}\\]\n\\[\\begin{split} &\nE_{kin}^{max} =\neV_0 =\ne \\frac{Q}{C} =\nh(\\nu - \\nu_0)\n\\end{split} \\tag{23}\\]\n\\[\nV_0 = \\textnormal{Opposing Potential ($I=0$)}\n\\]\\[\n\\alpha = \\angle( E_{kin}, \\nu ) \\qquad\ne = \\textnormal{electron charge} \\qquad\nQ = \\textnormal{ion charge} \\qquad\n\\]\\[\nC = \\textnormal{Capacitance} \\qquad\n\\nu = \\frac{1}{2\\pi} \\frac{1}{\\sqrt{LC}}\\sqrt{1 - \\frac{C}{L}R^2}\n\\]\\[\n\\Rightarrow \\textnormal{Inductance } L = \\frac{4\\pi^2}{C} \\left( \\frac{e}{h}Q + \\nu_0 \\right)^2\n\\]\n\n\n\\(\\Rightarrow \\textnormal{Ionisation Energy of chemical element } E_i = h\\nu = h\\frac{\\lambda}{c} = \\hbar\\omega = \\frac{h}{k\\lambda} \\omega\\)\n\\(\\Rightarrow \\textnormal{Energy released (gained) } E_{gain} = E_{pot} - E_i = mc^2 - h\\nu\\)",
+    "crumbs": [
+      "Home",
+      "Explorations",
+      "Potential"
+    ]
   }
 ]
