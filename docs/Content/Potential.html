@@ -819,7 +819,10 @@ window.Quarto = {
     <h2 id="toc-title">Chapters</h2>
    
   <ul>
-  <li><a href="#potential-as-intrinsic-energy-of-inertia" id="toc-potential-as-intrinsic-energy-of-inertia" class="nav-link active" data-scroll-target="#potential-as-intrinsic-energy-of-inertia"><span class="header-section-number">1</span> Potential as “intrinsic energy of inertia”</a></li>
+  <li><a href="#potential-as-intrinsic-energy-of-inertia" id="toc-potential-as-intrinsic-energy-of-inertia" class="nav-link active" data-scroll-target="#potential-as-intrinsic-energy-of-inertia"><span class="header-section-number">1</span> Potential as “intrinsic energy of inertia”</a>
+  <ul class="collapse">
+  <li><a href="#electro-magnetic-interactionscoupling-maxwell-conditions" id="toc-electro-magnetic-interactionscoupling-maxwell-conditions" class="nav-link" data-scroll-target="#electro-magnetic-interactionscoupling-maxwell-conditions"><span class="header-section-number">1.1</span> Electro-Magnetic interactions/coupling (Maxwell conditions)</a></li>
+  </ul></li>
   <li><a href="#elec.-potential-structure" id="toc-elec.-potential-structure" class="nav-link" data-scroll-target="#elec.-potential-structure"><span class="header-section-number">2</span> elec. Potential structure:</a></li>
   <li><a href="#magn.-potential-structure" id="toc-magn.-potential-structure" class="nav-link" data-scroll-target="#magn.-potential-structure"><span class="header-section-number">3</span> magn. Potential structure:</a></li>
   <li><a href="#electric-endogen-energy-e_pot-mc2" id="toc-electric-endogen-energy-e_pot-mc2" class="nav-link" data-scroll-target="#electric-endogen-energy-e_pot-mc2"><span class="header-section-number">4</span> Electric endogen energy <span class="math inline">\(E_{pot} = mc^2\)</span>:</a></li>
@@ -876,7 +879,7 @@ window.Quarto = {
 \newline &amp;
 \stackrel{\textnormal{fast moving charge}}{=}
 \newline &amp;
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{\epsilon_0} \frac{1}{r} \frac{1}{\left( 1 - \frac{r}{\left| r \right|} \cdot \frac{v}{c} \right)^3 } q
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\varepsilon_0} \frac{1}{r} \frac{1}{\left( 1 - \frac{r}{\left| r \right|} \cdot \frac{v}{c} \right)^3 } q
 \left[
 \underbrace{
 \left( 1 - \frac{v^2}{c^2} \right) \frac{\frac{r}{\left| r \right|} - \frac{v}{c}}{r}
@@ -894,22 +897,33 @@ window.Quarto = {
 \stackrel{\textnormal{Far Field}}
 = ...
 \end{split} \tag{2}\]</span></span></p>
-<p>Electro-Magnetic interactions/coupling (Maxwell conditions)</p>
-<p>conservativ, static charge localisation: …</p>
-<p>stationary, slow charge movement: <span id="eq-maxwell_slow"><span class="math display">\[\begin{split} &amp;
-\nabla \cdot \epsilon_0 \mathscr{E} = \varrho \qquad \qquad \qquad \qquad
+<section id="electro-magnetic-interactionscoupling-maxwell-conditions" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="electro-magnetic-interactionscoupling-maxwell-conditions"><span class="header-section-number">1.1</span> Electro-Magnetic interactions/coupling (Maxwell conditions)</h3>
+<section id="conservativ-static-charge-localisation" class="level4" data-number="1.1.1">
+<h4 data-number="1.1.1" class="anchored" data-anchor-id="conservativ-static-charge-localisation"><span class="header-section-number">1.1.1</span> conservativ, static charge localisation:</h4>
+<p>…</p>
+</section>
+<section id="stationary-slow-charge-movement" class="level4" data-number="1.1.2">
+<h4 data-number="1.1.2" class="anchored" data-anchor-id="stationary-slow-charge-movement"><span class="header-section-number">1.1.2</span> stationary, slow charge movement:</h4>
+<p><span id="eq-maxwell_slow"><span class="math display">\[\begin{split} &amp;
+\nabla \cdot \varepsilon_0 \mathscr{E} = \varrho \qquad \qquad \qquad \qquad
 \nabla \cdot \mathscr{B} = 0
 \newline &amp;
 \nabla \times \mathscr{E} = -\frac{\partial}{\partial t} \mathscr{B} = i\omega\mathscr{B}  \qquad
-\nabla \times \frac{1}{\mu_0} \mathscr{B} = j + \epsilon_0 \frac{\partial}{\partial t} \mathscr{E} = j - i\omega\epsilon_0\mathscr{E}
+\nabla \times \frac{1}{\mu_0} \mathscr{B} = j + \varepsilon_0 \frac{\partial}{\partial t} \mathscr{E} = j - i\omega\varepsilon_0\mathscr{E}
 \end{split} \tag{3}\]</span></span></p>
-<p>relativistic, fast charge movement: …</p>
+</section>
+<section id="relativistic-fast-charge-movement" class="level4" data-number="1.1.3">
+<h4 data-number="1.1.3" class="anchored" data-anchor-id="relativistic-fast-charge-movement"><span class="header-section-number">1.1.3</span> relativistic, fast charge movement:</h4>
+<p>…</p>
 <p><span class="math inline">\(\Rightarrow\)</span> Wave equation that determines Potential: <span id="eq-potignit"><span class="math display">\[\begin{split} &amp;
 \Delta \cdot U - \frac{1}{c^2} \frac{\partial^2}{\partial t^2} U = J
 \end{split} \tag{4}\]</span></span></p>
 <p><span class="math inline">\(\Rightarrow\)</span> Potential caused by “ignition J” (inhomgenity) from source at rest, v = 0: <span id="eq-potelec"><span class="math display">\[\begin{split} &amp;
 U = -\frac{1}{4\pi} \int \frac{J}{\left | r  \right |} \, dr'
 \end{split} \tag{5}\]</span></span></p>
+</section>
+</section>
 </section>
 <section id="elec.-potential-structure" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="elec.-potential-structure"><span class="header-section-number">2</span> elec. Potential structure:</h2>
