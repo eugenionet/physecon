@@ -815,8 +815,14 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="EMfield.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://quarto.org/docs/output-formats/html-basics.html"><i class="bi bi-link-45deg"></i>see also</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Chapters</h2>
+   
+  <ul>
+  <li><a href="#electro-magnetic-field-force-caused-by-potential" id="toc-electro-magnetic-field-force-caused-by-potential" class="nav-link active" data-scroll-target="#electro-magnetic-field-force-caused-by-potential"><span class="header-section-number">0.1</span> Electro-Magnetic Field (force caused by potential)</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="EMfield.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://quarto.org/docs/output-formats/html-basics.html"><i class="bi bi-link-45deg"></i>see also</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -824,18 +830,21 @@ window.Quarto = {
 
 
 
-<p>Electro-Magnetic Field (force caused by potential):</p>
+<section id="electro-magnetic-field-force-caused-by-potential" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="electro-magnetic-field-force-caused-by-potential"><span class="header-section-number">0.1</span> Electro-Magnetic Field (force caused by potential)</h3>
 <p><span id="eq-elecfield"><span class="math display">\[\begin{split} &amp;
 \mathscr{B} = \nabla \times \boldsymbol{U_m} =
 \frac{1}{c} \left( \frac{r}{\left| r \right|} \times \mathscr{E} \right)
 \newline &amp;
-\stackrel{\textnormal{Near Field}}
-\approx
-...
-\newline &amp;
 \stackrel{\textnormal{Far Field}}
 =
-...
+\frac{1}{2} \frac{1}{2\pi} \mu_0 \frac{k^2 e^{i(kr - \omega t)}}{r} \frac{r}{\left| r \right|} \times \left( c p_{0_{dipol}} + m_{0_{dipol}} \times \frac{r}{\left| r \right|} \right)
+\newline &amp;
+\stackrel{\textnormal{Near Field}}
+\approx
+\frac{1}{2} \frac{1}{2\pi} \mu_0 q \frac{v \times r}{\left| r \right|^2}
+\approx
+\frac{1}{2} \frac{1}{2\pi} i k c \mu_0 \frac{ \frac{r}{\left| r \right|} \times p_{dipol}}{r^2}
 \end{split} \tag{1}\]</span></span></p>
 <p><span id="eq-magnfield"><span class="math display">\[\begin{split} &amp;
 \mathscr{E}
@@ -858,14 +867,18 @@ window.Quarto = {
 }_\text{accelerated movement}
 \right]
 \newline &amp;
-\stackrel{\textnormal{Near Field}}
-\approx ...
-\newline &amp;
 \stackrel{\textnormal{Far Field}}
-= ...
+= c \mathscr{B} \times \frac{1}{\left| r \right|}
+\newline &amp;
+\stackrel{\textnormal{Near Field}}
+\approx
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\varepsilon_0} q \frac{r}{\left| r \right|^3}
+\approx
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\varepsilon_0} \frac{ 3 \frac{r}{\left| r \right|} \cdot p_{dipol} \frac{r}{\left| r \right|} - p_{dipol}}{r^3}
 \end{split} \tag{2}\]</span></span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
