@@ -864,13 +864,17 @@ window.Quarto = {
 \approx
 \frac{1}{2} \frac{1}{2\pi} \mu_0 q \frac{v \times r}{\left| r \right|^2}
 \approx
-\frac{1}{2} \frac{1}{2\pi} i k c \mu_0 \frac{ \frac{r}{\left| r \right|} \times p_{dipol}}{r^2}
+\frac{1}{2} \frac{1}{2\pi} i k c \mu_0 \frac{ \frac{r}{\left| r \right|} \times p_m}{r^2}
 \end{split} \tag{1}\]</span></span></p>
 </section>
 <section id="magnetic-field-in-matter" class="level4" data-number="0.1.2">
 <h4 data-number="0.1.2" class="anchored" data-anchor-id="magnetic-field-in-matter"><span class="header-section-number">0.1.2</span> Magnetic Field in Matter</h4>
-<p>Exitation, Displacement <span id="eq-hfield"><span class="math display">\[\begin{split} &amp;
-\mathscr{H} = ...
+<p>Exitation <span class="math inline">\(\hat{=}\)</span> Displacement <span id="eq-hfield"><span class="math display">\[\begin{split} &amp;
+\text{Exication:} \qquad
+\mathscr{H} = \frac{1}{\mu_0}\mathscr{B} - \mathscr{M} = \frac{1}{\mu}\mathscr{B}
+\newline &amp;
+\text{Magnetisation:} \qquad
+\mathscr{M} = \frac{\mu - \mu_0}{\mu\mu_0}\mathscr{B} = \frac{\mu - \mu_0}{\mu_0}\mathscr{H}
 \end{split} \tag{2}\]</span></span></p>
 </section>
 <section id="electric-field-in-vacuum" class="level4" data-number="0.1.3">
@@ -903,15 +907,16 @@ window.Quarto = {
 \approx
 \frac{1}{2} \frac{1}{2\pi} \frac{1}{\varepsilon_0} q \frac{r}{\left| r \right|^3}
 \approx
-\frac{1}{2} \frac{1}{2\pi} \frac{1}{\varepsilon_0} \frac{ 3 \frac{r}{\left| r \right|} \cdot p_{dipol} \frac{r}{\left| r \right|} - p_{dipol}}{r^3}
+\frac{1}{2} \frac{1}{2\pi} \frac{1}{\varepsilon_0} \frac{ 3 \frac{r}{\left| r \right|} \cdot p_m \frac{r}{\left| r \right|} - p_m}{r^3}
 \end{split} \tag{3}\]</span></span></p>
 </section>
 <section id="electric-field-in-matter" class="level4" data-number="0.1.4">
 <h4 data-number="0.1.4" class="anchored" data-anchor-id="electric-field-in-matter"><span class="header-section-number">0.1.4</span> Electric Field in Matter</h4>
-<p>Exitation, Displacement (field change)<br>
+<p>Displacement <span class="math inline">\(\hat{=}\)</span> Exitation (field change)<br>
 dielectricum = non-conducting material<br>
 electricum = conductor medium</p>
 <p><span id="eq-dfield"><span class="math display">\[\begin{split} &amp;
+\text{Exication:} \qquad
 \mathscr{D} = \varepsilon_0 \mathscr{E} + \mathscr{P} =
 \newline &amp;
 \stackrel{\textnormal{isotropic medium in weak fields}}{=}
@@ -923,19 +928,26 @@ electricum = conductor medium</p>
 4\pi r^3 n \varepsilon_0 \left&lt; \mathscr{E}_m \right&gt; =
 \alpha n \varepsilon_0 \bar{\mathscr{E}}_m =
 \varepsilon \mathscr{E}
+\newline &amp;
+\text{Polarisation:} \qquad
+\mathscr{P} = \left( \varepsilon - \varepsilon_0 \right) \mathscr{E}
 \end{split} \tag{4}\]</span></span></p>
 </section>
 <section id="abbreviations" class="level4" data-number="0.1.5">
 <h4 data-number="0.1.5" class="anchored" data-anchor-id="abbreviations"><span class="header-section-number">0.1.5</span> Abbreviations</h4>
 <p><span class="math display">\[
+\Phi = \text{electric potential} \qquad
+A = \text{magnetic potential} \qquad
+j = \nabla \times \mathscr{H} = \frac{1}{\mu_0} \nabla \times \mathscr{B} - \nabla \times \mathscr{M} = \text{elec. current density}
+\]</span><span class="math display">\[
 \mathscr{E} = \text{Electric Field} \qquad
-\mathscr{B} = \text{Magnetic Fiels} \qquad
-\mathscr{D} = \text{Displacement density of dielectricum}
+\mathscr{B} = \nabla \times A = \mu_0 \left( \mathscr{H} + \mathscr{M} \right) = \text{Magnetic Field}     \qquad      \nabla \cdot \mathscr{B} = 0    \qquad
+\mathscr{D} = \text{Displacement density of dielectricum} \qquad
+\mathscr{M} = \text{magnetisation density}
 \]</span><span class="math display">\[
 \mathscr{P} = \text{Polarisation} \qquad
-\mathscr{H} = \text{magn. exitation, magn. field strength ("magn. displacement")}
+\mathscr{H} = \text{magn. exitation, magn. field strength ("magn. displacement")}  \qquad
 \]</span><span class="math display">\[
-\mathscr{M} = \text{magnetisation density} \qquad
 n = \text{spacial molecule density in volume}
 \]</span><span class="math display">\[
 \alpha = 4\pi r^3 = constant     \qquad
