@@ -116,14 +116,14 @@
     "href": "Potentials.html#near-field",
     "title": "PHYSECON",
     "section": "16 Near Field",
-    "text": "16 Near Field\n\\[\nr \\ll \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\ll 2\\pi\n\\]\n\\[\n\\frac{w_m}{w_e} \\sim \\frac{ \\frac{\\vec{p}^2}{\\varepsilon_0 r^6} }{ \\frac{k^2 \\mu_0 c^2 \\vec{p}^2}{r^4} } \\sim \\left( kr \\right)^2 \\ll 1\n\\]\n\\[\n\\vec{p} = \\textnormal{elec. Dipol}\n\\]"
+    "text": "16 Near Field\ngranular spacetime\n\\[\nr \\ll \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\ll 2\\pi\n\\]\n\\[\n\\frac{w_m}{w_e} \\sim \\frac{ \\frac{\\vec{p}^2}{\\varepsilon_0 r^6} }{ \\frac{k^2 \\mu_0 c^2 \\vec{p}^2}{r^4} } \\sim \\left( kr \\right)^2 \\ll 1\n\\]\n\\[\n\\vec{p} = \\textnormal{elec. Dipol}\n\\]"
   },
   {
     "objectID": "Potentials.html#far-field",
     "href": "Potentials.html#far-field",
     "title": "PHYSECON",
     "section": "17 Far Field",
-    "text": "17 Far Field\naccelerated movement -&gt; Radiation in Far Field of charge source\n\\[\nr \\gg \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\gg 1\n\\qquad\nr \\gg kr_0^2 \\ll 1\n\\]\n\\[\n\\frac{w_m}{w_e} =\n\\frac{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 }{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 } = 1\n\\]"
+    "text": "17 Far Field\nflat spacetime\naccelerated movement -&gt; Radiation in Far Field of charge source\n\\[\nr \\gg \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\gg 1\n\\qquad\nr \\gg kr_0^2 \\ll 1\n\\]\n\\[\n\\frac{w_m}{w_e} =\n\\frac{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 }{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 } = 1\n\\]"
   },
   {
     "objectID": "Potentials.html#dissipation-in-vacuum",
@@ -361,7 +361,7 @@
     "href": "index.html#near-field",
     "title": "Physics Concepts as Indicative Framework to Model Systems of Economies Ex-ante",
     "section": "1.16 Near Field",
-    "text": "1.16 Near Field\n\\[\nr \\ll \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\ll 2\\pi\n\\]\n\\[\n\\frac{w_m}{w_e} \\sim \\frac{ \\frac{\\vec{p}^2}{\\varepsilon_0 r^6} }{ \\frac{k^2 \\mu_0 c^2 \\vec{p}^2}{r^4} } \\sim \\left( kr \\right)^2 \\ll 1\n\\]\n\\[\n\\vec{p} = \\textnormal{elec. Dipol}\n\\]",
+    "text": "1.16 Near Field\ngranular spacetime\n\\[\nr \\ll \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\ll 2\\pi\n\\]\n\\[\n\\frac{w_m}{w_e} \\sim \\frac{ \\frac{\\vec{p}^2}{\\varepsilon_0 r^6} }{ \\frac{k^2 \\mu_0 c^2 \\vec{p}^2}{r^4} } \\sim \\left( kr \\right)^2 \\ll 1\n\\]\n\\[\n\\vec{p} = \\textnormal{elec. Dipol}\n\\]",
     "crumbs": [
       "Home",
       "Projects",
@@ -373,7 +373,7 @@
     "href": "index.html#far-field",
     "title": "Physics Concepts as Indicative Framework to Model Systems of Economies Ex-ante",
     "section": "1.17 Far Field",
-    "text": "1.17 Far Field\naccelerated movement -&gt; Radiation in Far Field of charge source\n\\[\nr \\gg \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\gg 1\n\\qquad\nr \\gg kr_0^2 \\ll 1\n\\]\n\\[\n\\frac{w_m}{w_e} =\n\\frac{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 }{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 } = 1\n\\]",
+    "text": "1.17 Far Field\nflat spacetime\naccelerated movement -&gt; Radiation in Far Field of charge source\n\\[\nr \\gg \\lambda  = \\frac{2\\pi}{k}\n\\stackrel{\\textnormal{vacuum}}{=}\n\\frac{2\\pi}{ \\frac{\\omega}{c} }\n\\qquad\nkr \\gg 1\n\\qquad\nr \\gg kr_0^2 \\ll 1\n\\]\n\\[\n\\frac{w_m}{w_e} =\n\\frac{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 }{ \\frac{\\varepsilon_0}{2} c^2 \\left( \\mathscr{B} \\times \\frac{r}{\\left| r \\right|} \\right)^2 } = 1\n\\]",
     "crumbs": [
       "Home",
       "Projects",
