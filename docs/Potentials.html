@@ -494,8 +494,16 @@ window.Quarto = {
   <li><a href="#electric-endogen-energy" id="toc-electric-endogen-energy" class="nav-link" data-scroll-target="#electric-endogen-energy"><span class="header-section-number">5</span> Electric endogen energy</a></li>
   <li><a href="#electric-induced-energy-exogenous-excitation" id="toc-electric-induced-energy-exogenous-excitation" class="nav-link" data-scroll-target="#electric-induced-energy-exogenous-excitation"><span class="header-section-number">6</span> Electric induced energy (exogenous excitation)</a>
   <ul class="collapse">
-  <li><a href="#conductor-charge-conductive-element-for-energy-transfer-condition" id="toc-conductor-charge-conductive-element-for-energy-transfer-condition" class="nav-link" data-scroll-target="#conductor-charge-conductive-element-for-energy-transfer-condition"><span class="header-section-number">6.1</span> Conductor (charge conductive element for energy transfer) condition:</a></li>
-  <li><a href="#slow-changing-current-quasi-stationary-low-frequencies-condition" id="toc-slow-changing-current-quasi-stationary-low-frequencies-condition" class="nav-link" data-scroll-target="#slow-changing-current-quasi-stationary-low-frequencies-condition"><span class="header-section-number">6.2</span> Slow changing current (quasi-stationary, low frequencies) condition:</a></li>
+  <li><a href="#power" id="toc-power" class="nav-link" data-scroll-target="#power"><span class="header-section-number">6.1</span> Power:</a></li>
+  <li><a href="#frequency" id="toc-frequency" class="nav-link" data-scroll-target="#frequency"><span class="header-section-number">6.2</span> Frequency:</a></li>
+  <li><a href="#phase" id="toc-phase" class="nav-link" data-scroll-target="#phase"><span class="header-section-number">6.3</span> Phase:</a></li>
+  <li><a href="#refraction" id="toc-refraction" class="nav-link" data-scroll-target="#refraction"><span class="header-section-number">6.4</span> Refraction:</a></li>
+  <li><a href="#dielectricity" id="toc-dielectricity" class="nav-link" data-scroll-target="#dielectricity"><span class="header-section-number">6.5</span> Dielectricity:</a></li>
+  <li><a href="#permeability" id="toc-permeability" class="nav-link" data-scroll-target="#permeability"><span class="header-section-number">6.6</span> Permeability:</a></li>
+  <li><a href="#conductivity" id="toc-conductivity" class="nav-link" data-scroll-target="#conductivity"><span class="header-section-number">6.7</span> Conductivity:</a></li>
+  <li><a href="#dispersion" id="toc-dispersion" class="nav-link" data-scroll-target="#dispersion"><span class="header-section-number">6.8</span> Dispersion:</a></li>
+  <li><a href="#conductor-charge-conductive-element-for-energy-transfer-condition" id="toc-conductor-charge-conductive-element-for-energy-transfer-condition" class="nav-link" data-scroll-target="#conductor-charge-conductive-element-for-energy-transfer-condition"><span class="header-section-number">6.9</span> Conductor (charge conductive element for energy transfer) condition:</a></li>
+  <li><a href="#slow-changing-current-quasi-stationary-low-frequencies-condition" id="toc-slow-changing-current-quasi-stationary-low-frequencies-condition" class="nav-link" data-scroll-target="#slow-changing-current-quasi-stationary-low-frequencies-condition"><span class="header-section-number">6.10</span> Slow changing current (quasi-stationary, low frequencies) condition:</a></li>
   </ul></li>
   <li><a href="#energy-conservation-for-large-extended-conductive-medium" id="toc-energy-conservation-for-large-extended-conductive-medium" class="nav-link" data-scroll-target="#energy-conservation-for-large-extended-conductive-medium"><span class="header-section-number">7</span> Energy conservation for (large extended) conductive medium:</a></li>
   <li><a href="#energy-of-thin-conductor-concentrated-conductive-medium-without-electric-charge-in-its-surrounding-voltage-potentialdifference-tension" id="toc-energy-of-thin-conductor-concentrated-conductive-medium-without-electric-charge-in-its-surrounding-voltage-potentialdifference-tension" class="nav-link" data-scroll-target="#energy-of-thin-conductor-concentrated-conductive-medium-without-electric-charge-in-its-surrounding-voltage-potentialdifference-tension"><span class="header-section-number">8</span> Energy of thin conductor (concentrated conductive medium without electric charge in its surrounding), Voltage (potentialdifference, tension):</a></li>
@@ -772,21 +780,89 @@ W_e = \frac{1}{2} CU^2
 <p><span class="math inline">\(E_{kin}\)</span> Magnetic Energy: <span id="eq-magneticenergy"><span class="math display">\[\begin{split} &amp;
 W_m = \frac{1}{2} LI^2
 \end{split} \tag{15}\]</span></span></p>
-<p>Power: <span id="eq-power"><span class="math display">\[\begin{split} &amp;
+<section id="power" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="power"><span class="header-section-number">6.1</span> Power:</h3>
+<p><span id="eq-power"><span class="math display">\[\begin{split} &amp;
 P = VI = (U_1 - U_2) \frac{Q}{t} =
 \frac{E_1 - E_2}{t} = \frac{W}{t} = \frac{Fr}{t} = Fv
 \end{split} \tag{16}\]</span></span></p>
-<section id="conductor-charge-conductive-element-for-energy-transfer-condition" class="level3" data-number="6.1">
-<h3 data-number="6.1" class="anchored" data-anchor-id="conductor-charge-conductive-element-for-energy-transfer-condition"><span class="header-section-number">6.1</span> Conductor (charge conductive element for energy transfer) condition:</h3>
-<p><span id="eq-conductor"><span class="math display">\[\begin{split} &amp;
-\sigma \cdot t \gg \varepsilon_0
+</section>
+<section id="frequency" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="frequency"><span class="header-section-number">6.2</span> Frequency:</h3>
+<p><span id="eq-freq"><span class="math display">\[\begin{split} &amp;
+\omega = \dot{\rho} = \frac{v}{r} = 2 \pi \nu = k \lambda \frac{1}{T}
+\stackrel{vacuum}{=}
+kc
+\newline &amp;
+\stackrel{matter}{=}
+k \frac{c}{\eta} = kc \frac{\tan\beta}{\tan\alpha}
+\&gt; \hat{=} \&gt;
+kc \frac{\mathscr{E_\alpha}}{\mathscr{E_\beta}} = kc \frac{\varepsilon_\alpha}{\varepsilon_\beta} =
+k c \sqrt{\frac{\varepsilon\mu}{\varepsilon_0\mu_0}}
+\&gt; \hat{=} \&gt;
+\sqrt{\frac{k}{m}}
+\newline &amp;
+\&gt; \hat{=} \&gt;
+\frac{1}{\sqrt{LC}} \sqrt{1 - \frac{C}{L}R^2}
+\approx
+\frac{1}{\sqrt{LC}}
+\newline &amp;
+\stackrel{gravitational}{=}
+\sqrt{\frac{g}{r}}
 \end{split} \tag{17}\]</span></span></p>
 </section>
-<section id="slow-changing-current-quasi-stationary-low-frequencies-condition" class="level3" data-number="6.2">
-<h3 data-number="6.2" class="anchored" data-anchor-id="slow-changing-current-quasi-stationary-low-frequencies-condition"><span class="header-section-number">6.2</span> Slow changing current (quasi-stationary, low frequencies) condition:</h3>
+<section id="phase" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="phase"><span class="header-section-number">6.3</span> Phase:</h3>
+<p><span id="eq-phase"><span class="math display">\[\begin{split} &amp;
+\varphi = k \left( \vec{r}\cdot\vec{k} \right) - \omega t
+\coloneqq
+k s - \omega t = ...
+\end{split} \tag{18}\]</span></span></p>
+</section>
+<section id="refraction" class="level3" data-number="6.4">
+<h3 data-number="6.4" class="anchored" data-anchor-id="refraction"><span class="header-section-number">6.4</span> Refraction:</h3>
+<p>Refraction <span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(\exists\)</span> Matter <span id="eq-refract"><span class="math display">\[\begin{split} &amp;
+\eta = \frac{\tan\alpha}{\tan\beta}
+\&gt; \hat{=} \&gt;
+\mathscr{E}_\beta^{-1} \mathscr{E}_\alpha =
+\frac{\varepsilon_\alpha}{\varepsilon_\beta} = ...
+\end{split} \tag{19}\]</span></span></p>
+</section>
+<section id="dielectricity" class="level3" data-number="6.5">
+<h3 data-number="6.5" class="anchored" data-anchor-id="dielectricity"><span class="header-section-number">6.5</span> Dielectricity:</h3>
+<p><span id="eq-dielectricity"><span class="math display">\[\begin{split} &amp;
+\varepsilon = ...
+\end{split} \tag{20}\]</span></span></p>
+</section>
+<section id="permeability" class="level3" data-number="6.6">
+<h3 data-number="6.6" class="anchored" data-anchor-id="permeability"><span class="header-section-number">6.6</span> Permeability:</h3>
+<p><span id="eq-permeability"><span class="math display">\[\begin{split} &amp;
+\mu = ...
+\end{split} \tag{21}\]</span></span></p>
+</section>
+<section id="conductivity" class="level3" data-number="6.7">
+<h3 data-number="6.7" class="anchored" data-anchor-id="conductivity"><span class="header-section-number">6.7</span> Conductivity:</h3>
+<p><span id="eq-conductivity"><span class="math display">\[\begin{split} &amp;
+\sigma = ...
+\end{split} \tag{22}\]</span></span></p>
+</section>
+<section id="dispersion" class="level3" data-number="6.8">
+<h3 data-number="6.8" class="anchored" data-anchor-id="dispersion"><span class="header-section-number">6.8</span> Dispersion:</h3>
+<p>Dispersion <span class="math inline">\(\Leftrightarrow \quad \exists\)</span> Matter; Dispersion <span class="math inline">\(\neq\)</span> Dissipation <span id="eq-dispers"><span class="math display">\[\begin{split} &amp;
+...
+\end{split} \tag{23}\]</span></span></p>
+</section>
+<section id="conductor-charge-conductive-element-for-energy-transfer-condition" class="level3" data-number="6.9">
+<h3 data-number="6.9" class="anchored" data-anchor-id="conductor-charge-conductive-element-for-energy-transfer-condition"><span class="header-section-number">6.9</span> Conductor (charge conductive element for energy transfer) condition:</h3>
+<p><span id="eq-conductor"><span class="math display">\[\begin{split} &amp;
+\sigma \cdot t \gg \varepsilon_0
+\end{split} \tag{24}\]</span></span></p>
+</section>
+<section id="slow-changing-current-quasi-stationary-low-frequencies-condition" class="level3" data-number="6.10">
+<h3 data-number="6.10" class="anchored" data-anchor-id="slow-changing-current-quasi-stationary-low-frequencies-condition"><span class="header-section-number">6.10</span> Slow changing current (quasi-stationary, low frequencies) condition:</h3>
 <p><span id="eq-slowcurrent"><span class="math display">\[\begin{split} &amp;
 \frac{v}{c} \ll \frac{1}{c}\frac{\mathscr{E}}{\mathscr{B}} \ll \frac{c}{v}
-\end{split} \tag{18}\]</span></span></p>
+\end{split} \tag{25}\]</span></span></p>
 </section>
 </section>
 <section id="energy-conservation-for-large-extended-conductive-medium" class="level2" data-number="7">
@@ -799,7 +875,7 @@ P = VI = (U_1 - U_2) \frac{Q}{t} =
 \newline &amp;
 \stackrel{\textnormal{low frequency}}{=}
 \frac{1}{2}\frac{d}{dt} \left( LI^2 \right) + \frac{1}{2}\frac{d}{dt} \left( \frac{Q^2}{C} \right) + \left( RI^2 - VI \right) = 0
-\end{split} \tag{19}\]</span></span></p>
+\end{split} \tag{26}\]</span></span></p>
 </section>
 <section id="energy-of-thin-conductor-concentrated-conductive-medium-without-electric-charge-in-its-surrounding-voltage-potentialdifference-tension" class="level2" data-number="8">
 <h2 data-number="8" class="anchored" data-anchor-id="energy-of-thin-conductor-concentrated-conductive-medium-without-electric-charge-in-its-surrounding-voltage-potentialdifference-tension"><span class="header-section-number">8</span> Energy of thin conductor (concentrated conductive medium without electric charge in its surrounding), Voltage (potentialdifference, tension):</h2>
@@ -809,7 +885,7 @@ U_1 - U_2 =
 r \mathscr{E} =
 \dot{\Psi} + R I + \frac{I}{C}t =
 L \dot{I} + R I + \frac{Q}{C}
-\end{split} \tag{20}\]</span></span></p>
+\end{split} \tag{27}\]</span></span></p>
 <p><span class="math display">\[
 \Delta \cdot \coloneqq \textnormal{ div grad = Laplacian}
 \]</span><span class="math display">\[  
@@ -835,15 +911,6 @@ r = \frac{d}{\sqrt{2i}}\rho = \frac{d}{1+i}\rho = \textnormal{radius (extension)
 \]</span><span class="math display">\[
 \rho = kr = \textnormal{"radius of curvature $k$"}
 \]</span><span class="math display">\[
-\omega = \dot{\rho} = \frac{v}{r} = 2 \pi \nu = k \lambda \frac{1}{T}  = \sqrt{\frac{k}{m}}
-\&gt; \hat{=} \&gt;
-kc
-\&gt; \hat{=} \&gt;
-\frac{1}{\sqrt{LC}}
-\&gt; \hat{=} \&gt;
-\sqrt{\frac{g}{r}}
-= \textnormal{frequency}
-\]</span><span class="math display">\[
 \mu = \textnormal{permeability of conductor}    \qquad
 \sigma = \textnormal{conductivity of conductor (dielectricum)} \qquad
 \]</span></p>
@@ -852,7 +919,7 @@ kc
 </section>
 <section id="low-frequency" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="low-frequency"><span class="header-section-number">9</span> Low Frequency</h2>
-<p><span id="eq-lowfreq-cond"><span class="math display">\[\begin{split} &amp; \omega \ll \frac{1}{\mu \sigma} \frac{2}{r^2} \iff r \ll d \iff \rho \ll 1 \end{split} \tag{21}\]</span></span> <span class="math display">\[
+<p><span id="eq-lowfreq-cond"><span class="math display">\[\begin{split} &amp; \omega \ll \frac{1}{\mu \sigma} \frac{2}{r^2} \iff r \ll d \iff \rho \ll 1 \end{split} \tag{28}\]</span></span> <span class="math display">\[
 L \approx const.    \qquad
 C \approx const.    \qquad
 D_S \approx 0
@@ -860,7 +927,7 @@ D_S \approx 0
 </section>
 <section id="high-frequency" class="level2" data-number="10">
 <h2 data-number="10" class="anchored" data-anchor-id="high-frequency"><span class="header-section-number">10</span> High Frequency</h2>
-<p><span id="eq-highfreq-cond"><span class="math display">\[\begin{split} &amp; \omega \gg \frac{1}{\mu \sigma} \frac{2}{r^2} \iff r \gg d \iff \rho \gg 1 \end{split} \tag{22}\]</span></span> <span class="math display">\[
+<p><span id="eq-highfreq-cond"><span class="math display">\[\begin{split} &amp; \omega \gg \frac{1}{\mu \sigma} \frac{2}{r^2} \iff r \gg d \iff \rho \gg 1 \end{split} \tag{29}\]</span></span> <span class="math display">\[
 L(t) \neq const.    \qquad
 C(t) \neq const.   \qquad
 \textnormal{for Dipol: } D_S \propto \omega^4 \gg 0
@@ -951,17 +1018,17 @@ h =
 \frac{W}{\nu_0} =
 \frac{F_{EM} \cdot x}{\nu_0} =
 \hbar k \lambda
-\end{split} \tag{23}\]</span></span></p>
+\end{split} \tag{30}\]</span></span></p>
 <p><span id="eq-quant_h-2"><span class="math display">\[\begin{split} &amp;
 \hbar =
 \frac{E_1 - E_2}{\omega} =
-\end{split} \tag{24}\]</span></span></p>
+\end{split} \tag{31}\]</span></span></p>
 <p><span id="eq-quant_h-4"><span class="math display">\[\begin{split} &amp;
 E_{kin}^{max} =
 eV_0 =
 e \frac{Q}{C} =
 h(\nu - \nu_0)
-\end{split} \tag{25}\]</span></span></p>
+\end{split} \tag{32}\]</span></span></p>
 <p><span class="math display">\[
 V_0 = \textnormal{Opposing Potential ($I=0$)}
 \]</span><span class="math display">\[
@@ -970,7 +1037,7 @@ e = \textnormal{electron charge} \qquad
 Q = \textnormal{ion charge} \qquad
 \]</span><span class="math display">\[
 C = \textnormal{Capacitance} \qquad
-\nu = \frac{1}{2\pi} \frac{1}{\sqrt{LC}}\sqrt{1 - \frac{C}{L}R^2}
+\nu = \frac{1}{2\pi} \frac{1}{\sqrt{LC}} \sqrt{1 - \frac{C}{L}R^2}
 \]</span><span class="math display">\[
 \Rightarrow \textnormal{Inductance } L = \frac{4\pi^2}{C} \left( \frac{e}{h}Q + \nu_0 \right)^2
 \]</span></p>
