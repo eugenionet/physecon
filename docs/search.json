@@ -151,7 +151,7 @@
     "href": "Potentials.html#operators",
     "title": "PHYSECON",
     "section": "21 Operators",
-    "text": "21 Operators\nOperators\n\\(\\nabla \\coloneqq grad = \\text{Gradient (Gefälle, Neigung)}\\)\n\\(\\nabla \\cdot \\coloneqq div = \\text{Divergence (Quelle, spring source)}\\)\n\\(\\nabla \\times \\coloneqq rot = \\text{Rotation (Wirbelung, Curl)}\\)\n\\(\\nabla^2 = \\text{Lagrange Operatonr (Krümmung, Beschleunigung)}\\)\n\\(\\Delta \\cdot \\coloneqq div(grad) = \\text{Laplace Operatorn}\\)\n\\(\\Delta = \\text{Difference, shift}\\)"
+    "text": "21 Operators\nOperators\n\\(\\nabla \\coloneqq grad = \\text{Gradient (Gefälle, Neigung)}\\)\n\\(\\nabla \\cdot \\coloneqq div = \\text{Divergence (Quelle)}\\)\n\\(\\nabla \\times \\coloneqq rot = \\text{Rotation (Wirbelung, Curl)}\\)\n\\(\\nabla^2 = \\text{Lagrange Operatonr (Krümmung, Beschleunigung)}\\)\n\\(\\Delta \\cdot \\coloneqq div(grad) = \\text{Laplace Operatorn}\\)\n\\(\\Delta \\coloneqq \\text{Difference, shift}\\)"
   },
   {
     "objectID": "dummy.html",
@@ -428,7 +428,7 @@
     "href": "index.html#operators",
     "title": "Physics Concepts as Indicative Framework to Model Systems of Economies Ex-ante",
     "section": "1.21 Operators",
-    "text": "1.21 Operators\nOperators\n\\(\\nabla \\coloneqq grad = \\text{Gradient (Gefälle, Neigung)}\\)\n\\(\\nabla \\cdot \\coloneqq div = \\text{Divergence (Quelle, spring source)}\\)\n\\(\\nabla \\times \\coloneqq rot = \\text{Rotation (Wirbelung, Curl)}\\)\n\\(\\nabla^2 = \\text{Lagrange Operatonr (Krümmung, Beschleunigung)}\\)\n\\(\\Delta \\cdot \\coloneqq div(grad) = \\text{Laplace Operatorn}\\)\n\\(\\Delta = \\text{Difference, shift}\\)",
+    "text": "1.21 Operators\nOperators\n\\(\\nabla \\coloneqq grad = \\text{Gradient (Gefälle, Neigung)}\\)\n\\(\\nabla \\cdot \\coloneqq div = \\text{Divergence (Quelle)}\\)\n\\(\\nabla \\times \\coloneqq rot = \\text{Rotation (Wirbelung, Curl)}\\)\n\\(\\nabla^2 = \\text{Lagrange Operatonr (Krümmung, Beschleunigung)}\\)\n\\(\\Delta \\cdot \\coloneqq div(grad) = \\text{Laplace Operatorn}\\)\n\\(\\Delta \\coloneqq \\text{Difference, shift}\\)",
     "crumbs": [
       "Home",
       "Projects",
