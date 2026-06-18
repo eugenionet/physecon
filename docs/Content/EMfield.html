@@ -853,15 +853,18 @@ window.Quarto = {
 <section id="magnetic-field-in-vacuum" class="level4" data-number="0.1.1">
 <h4 data-number="0.1.1" class="anchored" data-anchor-id="magnetic-field-in-vacuum"><span class="header-section-number">0.1.1</span> Magnetic Field in Vacuum</h4>
 <p><span id="eq-mfield"><span class="math display">\[\begin{split} &amp;
-\mathscr{B} = \nabla \times \boldsymbol{U_m} =
+\mathscr{B} = \nabla \times \boldsymbol{U_m} \coloneqq rot(A)
+\newline &amp;
+\stackrel{\textnormal{Matter}}{=}
+\mu_0 \left( \mathscr{H} + \mathscr{M} \right)
+\newline &amp;
+\stackrel{\textnormal{Vacuum}}{=}
 \frac{1}{c} \left( \frac{r}{\left| r \right|} \times \mathscr{E} \right)
 \newline &amp;
-\stackrel{\textnormal{Far Field}}
-=
+\stackrel{\textnormal{Far Field}}{=}
 \frac{1}{2} \frac{1}{2\pi} \mu_0 \frac{k^2 e^{i(kr - \omega t)}}{r} \frac{r}{\left| r \right|} \times \left( c p_{0_{dipol}} + m_{0_{dipol}} \times \frac{r}{\left| r \right|} \right)
 \newline &amp;
-\stackrel{\textnormal{Near Field}}
-\approx
+\stackrel{\textnormal{Near Field}}{\approx}
 \frac{1}{2} \frac{1}{2\pi} \mu_0 q \frac{v \times r}{\left| r \right|^2}
 \approx
 \frac{1}{2} \frac{1}{2\pi} i k c \mu_0 \frac{ \frac{r}{\left| r \right|} \times p_m}{r^2}
@@ -938,10 +941,10 @@ electricum = conductor medium</p>
 <p><span class="math display">\[
 \Phi = \text{electric potential} \qquad
 A = \text{magnetic potential} \qquad
-j = \nabla \times \mathscr{H} = \frac{1}{\mu_0} \nabla \times \mathscr{B} - \nabla \times \mathscr{M} = \text{elec. current density}
+j = \nabla \times \mathscr{H} = \text{elec. current density}
 \]</span><span class="math display">\[
 \mathscr{E} = \text{Electric Field} \qquad
-\mathscr{B} = \nabla \times A = \mu_0 \left( \mathscr{H} + \mathscr{M} \right) = \text{Magnetic Field}     \qquad      \nabla \cdot \mathscr{B} = 0    \qquad
+\mathscr{B} = \text{Magnetic Field}     \qquad      \nabla \cdot \mathscr{B} = 0    \qquad
 \mathscr{D} = \text{Displacement density of dielectricum} \qquad
 \mathscr{M} = \text{magnetisation density}
 \]</span><span class="math display">\[
