@@ -833,6 +833,13 @@ window.Quarto = {
 
 
 
+<p>Energy Balance <span id="eq-energbal"><span class="math display">\[\begin{split} &amp;   
+\frac{\partial}{\partial t} \sum w_i+ \mathbf{\nabla} \cdot \sum \mathbf{\mathscr{S}}_{w_i} + \boldsymbol{j} \cdot \mathscr{E} = 0
+\end{split} \tag{1}\]</span></span></p>
+<p>Abbreviations:</p>
+<p><span class="math inline">\(w_i\)</span> = engery densities (electric, magnetic, gravitational, etc. …), <span class="math inline">\(i \in \mathbb{N}\)</span></p>
+<p><span class="math inline">\(\mathbf{\mathscr{S}}_{w_i}\)</span> = Poyinting-Vectros <span class="math inline">\(\hat{=}\)</span> energy transport densities (transfers) by fields (electric, magnetic, gravitational, etc. …) to corresponding energy densities <span class="math inline">\(w_i\)</span></p>
+<p><span class="math inline">\(\boldsymbol{j} \cdot \mathscr{E}\)</span> = energy gain provided by fields <span class="math inline">\(\mathscr{E}\)</span> and <span class="math inline">\(\mathscr{B}\)</span> through current density <span class="math inline">\(j\)</span></p>
 <section id="mechanical" class="level3" data-number="0.1">
 <h3 data-number="0.1" class="anchored" data-anchor-id="mechanical"><span class="header-section-number">0.1</span> Mechanical</h3>
 <p>…</p>
@@ -842,23 +849,51 @@ window.Quarto = {
 <p>charge conservation:</p>
 <p><span id="eq-continuity"><span class="math display">\[\begin{split} &amp;   
 \frac{\partial}{\partial t}\varrho + \nabla \cdot j = 0
-\end{split} \tag{1}\]</span></span></p>
+\end{split} \tag{2}\]</span></span></p>
 <p><span class="math inline">\(\varrho = \sigma\delta =\)</span> charge density in interior</p>
 <p><span class="math inline">\(\sigma =\)</span> charge density at border (surface)</p>
 <p><span class="math inline">\(\delta =\)</span> Dirac delta-function</p>
 <p><span class="math inline">\(\boldsymbol{j} = \sigma \left( \mathscr{E} + v \times \mathscr{B} \right) = \nabla \times \mathscr{H} - \frac{\partial}{\partial t}\mathscr{D} \hat{=}\)</span> elecectric current density</p>
-<p><span class="math inline">\(\boldsymbol{j} \cdot \mathscr{E} \hat{=}\)</span> energy gain</p>
-<p><span class="math inline">\(\mathscr{S} = \mathscr{E} \times \mathscr{H} \hat{=}\)</span> energy transport density (Intensity)</p>
+<p><span class="math inline">\(\boldsymbol{j} \cdot \mathscr{E} \hat{=}\)</span> energy gain by fields <span class="math inline">\(\mathscr{E}\)</span> and <span class="math inline">\(\mathscr{B}\)</span> through current density <span class="math inline">\(j\)</span></p>
+<p><span class="math inline">\(\mathscr{S} = \mathscr{E} \times \mathscr{H} \hat{=}\)</span> energy transport density (Intensity = <span class="math inline">\(\left| \bar{\mathscr{S}} \right|\)</span>)</p>
 <p>Energy conservation for (large extended) conductive medium:</p>
 <p><span id="eq-energyconserv-1"><span class="math display">\[\begin{split} &amp;   
 \int    \left(
-\frac{\partial}{\partial t} \left( we + w_m \right) + \mathbf{\nabla} \cdot \mathbf{\mathscr{S}} + \boldsymbol{j} \cdot \mathscr{E}
+\frac{\partial}{\partial t} \left( w_e + w_m \right) + \mathbf{\nabla} \cdot \mathbf{\mathscr{S}} + \boldsymbol{j} \cdot \mathscr{E}
 \right) \, dr
 = \frac{d}{dt}W_e + \frac{d}{dt}W_m + D_S + \int \left( \boldsymbol{j} \cdot \mathscr{E} \right) \, dr
 \newline &amp;
 \stackrel{\textnormal{low frequency}}{=}
 \frac{1}{2}\frac{d}{dt} \left( LI^2 \right) + \frac{1}{2}\frac{d}{dt} \left( \frac{Q^2}{C} \right) + \left( RI^2 - VI \right) = 0
-\end{split} \tag{2}\]</span></span></p>
+\end{split} \tag{3}\]</span></span></p>
+<p>Abreviations: <span class="math display">\[
+\Delta \cdot \coloneqq \textnormal{ div grad = Laplacian}
+\]</span><span class="math display">\[  
+J = \textnormal{"ignition of inhomogenity,cause"} \quad
+j = \textnormal{Current density} \quad
+\varrho = \textnormal{Charge density}
+\]</span><span class="math display">\[  
+V = \textnormal{Potentialdifference} \quad  
+I = \textnormal{Current} \quad
+R = \textnormal{Resistance} \quad
+\]</span><span class="math display">\[  
+L = \textnormal{Inductance} \qquad  
+C = \textnormal{Capacitance} \qquad
+Q = c\textnormal{harge (ion)} \qquad
+\Psi = LI = \textnormal{mag. Flux}
+\]</span><span class="math display">\[
+\mathscr{S} = \mathscr{E} \times \mathscr{H} = \textnormal{Poynting-Vector, radiation intensity}
+\]</span><span class="math display">\[
+D_S = \int \left( \mathbf{\nabla} \cdot \mathbf{\mathscr{S}} \right) \, dr = \int \textnormal{div}(\mathscr{E} \times \mathscr{H}) \, dr = \textnormal{dissipation engergy lost from radiation} \approx \textnormal{0 for low frequencies } \omega
+\]</span><span class="math display">\[
+d = \sqrt{\frac{1}{\mu \sigma} \frac{2}{\omega}} = \textnormal{skin depth (surface) of conductor} \qquad
+r = \frac{d}{\sqrt{2i}}\rho = \frac{d}{1+i}\rho = \textnormal{radius (extension) of conductor}
+\]</span><span class="math display">\[
+\rho = kr = \textnormal{"radius of curvature $k$"}
+\]</span><span class="math display">\[
+\mu = \textnormal{permeability of conductor}    \qquad
+\sigma = \textnormal{conductivity of conductor (dielectricum)} \qquad
+\]</span></p>
 </section>
 <section id="thermal" class="level3" data-number="0.3">
 <h3 data-number="0.3" class="anchored" data-anchor-id="thermal"><span class="header-section-number">0.3</span> Thermal</h3>
