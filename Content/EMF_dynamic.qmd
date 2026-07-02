@@ -1,0 +1,20 @@
+
+### Dynamic, fast charge movement in vacuum (Maxwell conditions relativistic):
+$$\begin{split} &
+...
+\end{split}$${#eq-EMF_vac_dynamic}
+
+
+Potentials:
+$$
+\Phi_e = ... \\
+\mathscr{A} = ...
+$$
+
+Fields:
+$$
+\mathscr{E} = ... \\
+\mathscr{B} = ...
+$$
+
+

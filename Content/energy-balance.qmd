@@ -1,0 +1,379 @@
+# Electromagnectic Energy Exchange in Vacuum
+
+{{< include C:/Users/erine/Desktop/Physics-Explorations/GitHub-Physics/PhysEcon/Content/Continuity.qmd >}}
+
+$\boldsymbol{j} = \sigma \left( \mathscr{E} + v \times \mathscr{B} \right) = \nabla \times \mathscr{H} - \frac{\partial}{\partial t}\mathscr{D} = \frac{1}{\mu_0}\nabla\times\mathscr{B} - \varepsilon_0\frac{\partial}{\partial t}\mathscr{E}  \hat{=}$ elecectric current density
+
+$\boldsymbol{j} \cdot \mathscr{E} \hat{=}$ energy gain by fields $\mathscr{E}$ and $\mathscr{B}$ through current density $j$
+
+$\mathscr{S} = \mathscr{E} \times \mathscr{H} \hat{=}$ energy transport density (Intensity = $\left| \overline{\mathscr{S}} \right|$)
+
+
+Energy conservation for (large extended) conductive medium:
+
+$$\begin{split} &   
+\int    \left(
+\frac{\partial}{\partial t} \left( w_e + w_m \right) + \mathbf{\nabla} \cdot \mathbf{\mathscr{S}} + \boldsymbol{j} \cdot \mathscr{E} 
+\right) \, dr
+= \frac{d}{dt}W_e + \frac{d}{dt}W_m + D_S + \int \left( \boldsymbol{j} \cdot \mathscr{E} \right) \, dr 
+\newline & 
+\stackrel{\textnormal{low frequency}}{=}
+\frac{1}{2}\frac{d}{dt} \left( LI^2 \right) + \frac{1}{2}\frac{d}{dt} \left( \frac{Q^2}{C} \right) + \left( RI^2 - VI \right) = 0
+\end{split}$${#eq-energyconserv-1} 
+
+
+
+## Energy Balance
+
+Electro-Magnetic Energy:
+$$\begin{split} &   
+E = E_{kin} + E_{pot} = \sqrt{ \left( pc \right)^2 + \left( mc^2 \right)^2 } 
+\stackrel{\text{vacuum}}{=} pc = \hbar\omega
+\newline &
+= \text{chargeenergy + fieldenergy + transportenergy}
+\end{split}$${#eq-emenergy}
+
+Charge Energy:
+$$\begin{split} &
+\underbrace{  
+    j \cdot \mathscr{E} 
+}_\text{charge energy} =
+- \left( 
+\underbrace{
+    \frac{\partial}{\partial t} \sum w_i
+}_\text{field energy}  
++ 
+\underbrace{
+    \nabla\cdot\mathscr{S}
+    }_\text{transfer energy} 
+\right) =
+\mathscr{E} \cdot \nabla\times\mathscr{A} - \mathscr{E} \cdot \frac{\partial}{\partial t}\mathscr{D}
+\end{split}$${#eq-chargeenergy} 
+
+
+Field Energy:
+$$\begin{split} &   
+\frac{\partial}{\partial t} w = \frac{\partial}{\partial t} \sum w_i = \frac{\partial}{\partial t} \left( w_e + w_m \right) = 
+\frac{\partial}{\partial t} \left( \frac{\varepsilon_0}{2}\mathscr{E}^2 + \frac{1}{2\mu_0}\mathscr{B}^2 \right)
+ \stackrel{vacuum}{=} 
+ \frac{\partial}{\partial t} \left( \frac{1}{2}\frac{1}{\mu_0}\left( \mathscr{A}\cdot\nabla\times\mathscr{B} - \mathscr{B}^2 \right) \right)
+\end{split}$${#eq-fieldenergy} 
+
+
+Transfer Energy:
+$$\begin{split} &
+- \dot{w} \, \hat{=} \,
+\nabla \cdot \mathscr{S} 
+\stackrel{matter}{=}
+\nabla \cdot \left( \mathscr{E} \times \mathscr{H} \right)
+\stackrel{vacuum}{=}
+\nabla \cdot \left( \mathscr{E} \times \mathscr{B} \right)
+\stackrel{\text{alternativ in vacuum}}{=}
+\nabla \cdot \left( \frac{1}{2}\frac{1}{\mu_0}\frac{\partial}{\partial t} \left( \mathscr{A}\times\mathscr{B} \right) \right)
+= ...
+\end{split}$${#eq-transferenergy} 
+
+
+Local Energy Conservation: 
+
+Force $F = q \left( \mathscr{E} + v \times \mathscr{B} \right)$
+
+Work $W = \Delta E = Fr = pv = const.$
+
+Power $\frac{d}{dt}W = 0$
+
+$$\begin{split} &
+\overbrace{
+\underbrace{
+    \boldsymbol{j} \cdot \mathscr{E} 
+}_\text{charge energy}
++ 
+\underbrace{
+    \frac{\partial}{\partial t} \sum w_i 
+}_\text{field energy}
+}^\text{= const.}
++ 
+\underbrace{
+    \mathbf{\nabla} \cdot \sum \mathbf{\mathscr{S}}_{w_i} 
+}_\text{transfer energy}
+\stackrel{alternatives}{=}
+\newline &
+\boldsymbol{j} \cdot \mathscr{E} 
++ 
+\frac{\partial}{\partial t}\left( \frac{1}{2}\varepsilon_0\mathscr{E}^2 + \frac{1}{2}\frac{1}{\mu_0}\mathscr{A}\cdot\nabla\times\mathscr{B} \right) + 
+\frac{1}{\mu_0}\nabla\cdot\left( \mathscr{E}\times\mathscr{B} + \frac{1}{2}\frac{\partial}{\partial t}\left( \mathscr{A}\times\mathscr{B} \right) \right) =
+\newline &
+... \text{alternatives according fields} ...
+\newline &
+= 0 
+\end{split}$${#eq-energbal} 
+
+
+conditions for modeling alternatives (Eigenvalue solution):
+
+- $w =\sum w_i: \frac{\partial}{\partial t}w = - \nabla \cdot \mathscr{S}_w$
+
+- $w = w\left(\mathscr{E},\mathscr{B}\right): \mathscr{E} \lambda^2 = \varrho \lambda$
+
+- $w = w\left(\mathscr{E},\mathscr{B}\right): \mathscr{B} \lambda^2 = j \lambda$
+
+- $\mathscr{S}_w = \mathscr{S}_w\left(\mathscr{E},\mathscr{B}\right): \mathscr{E} \lambda^2 = \varrho \lambda$
+
+- $\mathscr{S}_w = \mathscr{S}_w\left(\mathscr{E},\mathscr{B}\right): \mathscr{B} \lambda^2 = j \lambda$
+
+
+
+### Energy Density Flux: Pyointing-Vector
+
+$$
+\mathscr{S} 
+\stackrel{vacuum}{=}
+\mathscr{E} \times \mathscr{B}
+\stackrel{matter}{=}
+\mathscr{E} \times \mathscr{H}
+$$
+
+Far Field: $\text{Power} = \frac{\Delta E}{t} \hat{=} \frac{d}{dt}E$ = 0 $\Rightarrow$ Energy = const. $\Rightarrow$ Energy Conservation
+
+$$
+\frac{d}{dt}E \: \hat{=} \:
+\frac{d}{dt} \left( 
+\underbrace{ 
+\underbrace{
+    \int_{\mathbb{R}^3} j \cdot \mathscr{E} 
+}_\text{charge energy} + 
+\underbrace{
+    \int_{\mathbb{R}^3} \frac{\partial}{\partial t} \sum w_i 
+}_\text{field energy}
+}_\text{= const.}
+\right)
+= 0
+$$
+
+Near Field (local): Power = Energytransport
+$$
+\frac{d}{dt}E \: \hat{=} \:
+\frac{d}{dt} \left( 
+\underbrace{
+    \int_{\mathbb{R}^3} j \cdot \mathscr{E} 
+}_\text{charge energy} + 
+\underbrace{
+    \int_{\mathbb{R}^3} \frac{\partial}{\partial t} \sum w_i 
+}_\text{field energy}  
+\right)
+\stackrel{local}{=} 
+\underbrace{
+    - \int_{\mathbb{R}^2} \mathscr{S} \cdot \textbf{n} \underbrace{\;df}_\text{"skin"}
+}_\text{transported energy density}
+$$
+
+
+## Local Force Balance
+
+Electro-Magnetic Force:
+$$\begin{split} &   
+\dot{p} = F = q \left( \mathscr{E} + v \times \mathscr{B} \right) 
+\newline &
+= \text{chargeforce + fieldforce + stresstension}
+\end{split}$${#eq-emforce} 
+
+Charge Force:
+$$\begin{split} &   
+... = \varrho\mathscr{E} + j \times \mathscr{B}
+\end{split}$${#eq-chargeforde} 
+
+Field Force:
+$$\begin{split} &   
+... = \frac{\partial}{\partial t}\frac{1}{c^2}\mathscr{S}
+\end{split}$${#eq-fieldforce} 
+
+Tension Force:
+$$\begin{split} &
+\nabla\cdot\mathscr{T} = \varepsilon_0 \left( \mathscr{E} \times \nabla\times\mathscr{E} - \mathscr{E} \nabla\cdot\mathscr{E} \right) + \frac{1}{\mu_0} \left( \mathscr{B} \nabla\times\mathscr{B} - \mathscr{B}\nabla\cdot\mathscr{B} \right)
+\end{split}$${#eq-tension}
+
+
+
+Local Momentum Conservation: 
+
+Force $F = q \left( \mathscr{E} + v \times \mathscr{B} \right) = \frac{d}{dt}p = 0$
+
+Momentum $p = \int F = \frac{E}{c} = const.$
+
+$$\begin{split} &
+\overbrace{ 
+\underbrace{
+\varrho\mathscr{E} + j \times \mathscr{B} 
+}_\text{charge force}
++ 
+\underbrace{
+\frac{\partial}{\partial t}\frac{1}{c^2}\mathscr{S}
+}_\text{field force}
+}^\text{...}
++
+\underbrace{
+\nabla \cdot \mathscr{T}
+}_\text{tension force}
+= 0 
+\end{split}$${#eq-localmomentumconserv} 
+
+
+
+### Tension Force: Stress-Tensor
+
+Stress Tensor quantifies tension $\hat{=} \Delta$ Forces = Pressure - Traction $\hat{=}$ "torsion tension" at angular momentum
+
+$$\begin{split} &   
+\mathscr{T} \hat{=} \mathscr{T}_{ik} = 
+\delta_{ik} \left( \frac{1}{2}\varepsilon_0\mathscr{E}^2 + \frac{1}{2}\frac{1}{\mu_0}\mathscr{B}^2 \right) 
+- \varepsilon_0\mathscr{E}_i\mathscr{E}_k 
+- \frac{1}{\mu_0}\mathscr{B}_i\mathscr{B}_k
+\end{split}$${#eq-stresstensor}
+
+$\mathscr{E}$ and $\mathscr{B}$ fields of spacial confined charge and current density distribution, far field, static:
+$\mathscr{T}\sim \frac{1}{r^4}$
+$\Leftrightarrow$
+$\int_{\mathbb{R}^3}\mathscr{T}d^3r = \int_{\infty}\mathscr{T}df = 0$
+
+
+Far Field: Force = 0 $\Leftrightarrow$ Momentum = const. $\Rightarrow$ Momentum Conservation
+$$
+F = \dot{p} \: \hat{=} \:
+\frac{d}{dt} \underbrace{ \left[\underbrace{
+    \int\limits_{local} \left( \varrho\mathscr{E} + j \times \mathscr{B} \right)}_\text{charge momentum} + \underbrace{\frac{1}{c^2}\mathscr{S} 
+    }_\text{field momentum}\right] }_{= p = const.}
+= 0
+$$
+
+Near Field (local): Force = Tension
+$$
+F = \dot{p} \: \hat{=} \:
+\frac{d}{dt} \underbrace{ \left[\underbrace{
+    \int\limits_{local} \left( \varrho\mathscr{E} + j \times \mathscr{B} \right)}_\text{charge momentum} + \underbrace{\frac{1}{c^2}\mathscr{S} 
+    }_\text{field momentum}\right] }_{= p \neq const., \;\exists\; -\mathscr{T} \;\text{local tension}}
+    \stackrel{local}{=}
+    \underbrace{
+        - \int\limits_{\mathbb{R}^{2}} \mathscr{T} \cdot \textbf{n} \underbrace{\;df}_\text{"skin"}
+    }_\text{stress tension appears}
+$$
+
+
+
+## Momentum Balance
+
+Momentum Conservation and Local Tension: linear momentum conservation if $p = const.$, otherwise "tension" occures:
+
+$$
+p = \int F = \int \frac{d}{dt} p = \sqrt{\frac{1}{c^2} \left( E^2 - \left( mc \right)^2 \right)} \stackrel{\text{vacuum}}{=} \frac{E}{c} = \frac{2\pi}{c^2}h\nu
+$$
+
+$p = const.$, linear, vacuum, Far Field:
+
+$$\begin{split} &
+F = \dot{p} \hat{=} 
+\int\limits_{\mathbb{R}^{3}} \frac{d}{dt} \left[ \underbrace{\left( \varrho\mathscr{E} + j \times \mathscr{B} \right)}_\text{charge force density} + \underbrace{\frac{\partial}{\partial t}\frac{1}{c^2}\mathscr{S}}_\text{field force density} \right] = 
+\newline &
+\frac{d}{dt} \underbrace{ \left[\underbrace{
+    \int\limits_{\mathbb{R}^{3}} \left( \varrho\mathscr{E} + j \times \mathscr{B} \right)}_\text{charge momentum} + \underbrace{\frac{1}{c^2}\mathscr{S} 
+    }_\text{field momentum}\right] }_\text{= p momentum conserved if p = const.} 
+    = 0
+\end{split}$${#eq-farlinmomentum}
+
+
+
+$p \neq const.$, local $\in \mathbb{R}^2 \ll \mathbb{R}^3 = \infty$, linear, vacuum, Near Field $\Leftrightarrow \exists -\mathscr{T}$ as tension compensation flux:
+
+$$\begin{split} &
+F = \dot{p} \hat{=} 
+\int\limits_{local} \frac{d}{dt} \left[ \underbrace{\left( \varrho\mathscr{E} + j \times \mathscr{B} \right)}_\text{charge force density} + \underbrace{\frac{\partial}{\partial t}\frac{1}{c^2}\mathscr{S}}_\text{field force density} \right] = 
+\newline &
+\frac{d}{dt} \underbrace{ \left[\underbrace{
+    \int\limits_{local} \left( \varrho\mathscr{E} + j \times \mathscr{B} \right)}_\text{charge momentum} + \underbrace{\frac{1}{c^2}\mathscr{S} 
+    }_\text{field momentum}\right] }_{= p \neq const., \;\exists\; -\mathscr{T} \;\text{local tension}}
+    \stackrel{local}{=}
+    - \int\limits_{\mathbb{R}^{2}} \mathscr{T} \cdot \textbf{n} \underbrace{\;df}_\text{"skin"}
+\end{split}$${#eq-nearlinmomentum}
+
+
+Momentum $p = \int\limits_{\mathbb{R}^{3}} \left( \varrho\mathscr{E} + j \times \mathscr{B} \right) + \frac{1}{c^2}\mathscr{S}$
+
+photon Spin = $\int\limits_{\mathbb{R}^{3}} \frac{1}{c^2}\mathscr{S}$
+
+
+angular momentum (photon Spin):
+$$\begin{split} &  
+D = \dot{L} \hat{=} 
+...
+\end{split}$${#eq-locangmomentum}
+
+
+
+## Radiation Pressure
+
+average energy density $\hat{=}$ radiation pressure, if stationary (very slow flow motion $v \ll c$) :
+
+$$\begin{split} &
+\overline{w} \, \hat{=} \, 
+- \nabla \mathscr{T} \cdot \textbf{n} \, \hat{=} \,  
+- \frac{1}{c} \left| \overline{\mathscr{E} \times \mathscr{H}} \right| = 
+- \frac{1}{c} \left| \overline{\mathscr{S}} \right| = 
+\overline{
+    \left( \varrho\mathscr{E} + j \times \mathscr{B} \right) + \frac{\partial}{\partial t}\frac{1}{c^2}\mathscr{S}
+}
+\stackrel{stationary}{=}
+\overline{
+    \varrho\mathscr{E} + j \times \mathscr{B}
+}
+\end{split}$${#eq-radiationpres}
+
+
+
+
+
+## Abbreviations:
+
+$w_i$ = energy densities (electric $w_e$, magnetic $e_m$, gravitational, etc. ...), $i \in \mathbb{N}$
+
+$\mathbf{\mathscr{S}}_{w_i}$ = Poynting-Vectros $\hat{=}$ energy transport densities (transfers) by fields (electric, magnetic, gravitational, etc. ...) to corresponding energy densities $w_i$
+
+$\boldsymbol{j} \cdot \mathscr{E}$ = energy gain provided by fields $\mathscr{E}$ and $\mathscr{B}$ through current density $j$
+
+$\mathscr{T}$ = Stress Tensor, (tension, momentum flow density)
+
+$\textbf{n} =$ surface normal vector (orthongoal on skin)
+
+$\Delta \cdot \coloneqq$ div grad = Laplacian
+
+$J =$ "ignition of inhomogenity,cause"
+
+$j =$ Current density
+
+$\varrho =$ Charge density
+
+$V =$ Potentialdifference
+
+$I =$ Current
+
+$R =$ Resistance
+
+$L =$ Inductance
+  
+$C =$ Capacitance
+
+$Q =$ charge (ion)
+
+$\Psi = LI =$ magn. Flux
+
+$\mathscr{S} = \mathscr{E} \times \mathscr{H} =$ Poynting-Vector, radiation intensity
+
+$D_S = \int \left( \mathbf{\nabla} \cdot \mathbf{\mathscr{S}} \right) \, dr = \int \textnormal{div}(\mathscr{E} \times \mathscr{H}) \, dr =$ dissipation engergy lost from radiation $\approx 0$ for low frequencies $\omega$
+
+$d = \sqrt{\frac{1}{\mu \sigma} \frac{2}{\omega}} =$ skin depth (surface) of conductor
+
+$r = \frac{d}{\sqrt{2i}}\rho = \frac{d}{1+i}\rho =$ radius (extension) of conductor
+
+$\rho = kr =$ "radius of curvature $k$"
+
+$\mu =$ permeability of conductor
+
+$\sigma =$ conductivity of conductor (dielectricum)

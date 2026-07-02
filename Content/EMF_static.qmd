@@ -1,0 +1,24 @@
+
+### Static, kinetec rest charge localisation (conservativ system):
+$$\begin{split} &
+\nabla \cdot \varepsilon_0 \mathscr{E} = \varrho \qquad \qquad \qquad \qquad
+\nabla \cdot \mathscr{B} = 0 
+\newline &
+\nabla \times \mathscr{E} = -\frac{\partial}{\partial t} \mathscr{B} = i\omega\mathscr{B}  \qquad
+\nabla \times \frac{1}{\mu_0} \mathscr{B} = j \cong \sigma\mathscr{E}
+\newline &
+\nabla \cdot j = 0
+\end{split}$${#eq-EMF_vac_static}
+
+
+Potentials:
+$$
+\Phi_e = ... \\
+\mathscr{A} = ...
+$$
+
+Fields:
+$$
+\mathscr{E} = ... \\
+\mathscr{B} = ...
+$$
